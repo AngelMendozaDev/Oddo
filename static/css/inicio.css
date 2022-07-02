@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.my-navbar {
+    height: 60px;
+    background-color: #724b68;
+    color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+}
+
+.nav-left {
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+}
+
+.nav-right {
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav-right .icon {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+/**********
+Menu lateral
+***********/
+
+.menu-slide {
+    width: 250px;
+    height: 100vh;
+    background-color: #724b68;
+    color: #fff;
+    border-radius: dotted 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: -250px;
+    transition: all 1s;
+}
+
+.muestra {
+    margin-right: 0;
+    transition: all 1s;
+}
+
+#close-side {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opciones {
+    list-style: none;
+    padding: 5px;
+}
+
+.opciones li {
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.opciones li:hover {
+    background-color: #53364c;
+    transition: all 1.5s;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+
+/********************
+Panel
+*****************/
+
+.my-panel {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #53364c;
+    margin-left: -100vw;
+    transition: all 1s;
+}
+
+#close-panel {
+    color: #fff;
+    font-size: 25px;
+    padding: 15px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.option-cube {
+    width: 100px;
+    height: 100px;
+    background-color: #724b68;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.option-cube img {
+    width: 100%;
+}
+
+.option-cube:hover {
+    cursor: pointer;
+    background-color: #3b2636;
+    transition: all 0.5s;
+}
+
+.globo {
+    width: 100px;
+    border-radius: 15px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    opacity: 0;
+    margin-top: -30px;
+    transition: all 1s;
+    margin: 0px;
+    padding: 0px;
+}
+
+.option-cube:hover .globo {
+    opacity: 1;
+    margin-top: 20px;
+    transition: all 1.5s;
+}
