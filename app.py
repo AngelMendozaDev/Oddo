@@ -1,6 +1,6 @@
 #Importacion de Librerias
 from ensurepip import bootstrap
-from flask import Flask
+from flask import Flask, redirect
 from flask import render_template, request
 from flaskext.mysql import MySQL
 from flask_bootstrap5 import Bootstrap
@@ -33,9 +33,13 @@ def login():
     myUser = request.form['user']
     myPass = request.form['pass']
     if(myUser == "AngelDev" and myPass == "Code"):
-        return render_template("views/inicio.html");
+        return redirect("/main")
     
     return render_template("views/index.html", response = False);
+
+@app.route('/main')
+def main():
+    return render_template("views/inicio.html");
 
 if __name__ == '__main__':
     app.run(debug=True)
